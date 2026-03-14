@@ -2,13 +2,13 @@ FSIT — Fluid-Solid Interaction Toolkit
 
 FSIT (Fluid–Solid Interaction Toolkit) is a C++ simulation framework designed to study fluid–particle interaction problems using a coupled:
 
-Lattice Boltzmann Method (LBM) for fluid flow
+• Lattice Boltzmann Method (LBM) for fluid flow
 
-Discrete Element Method (DEM) for particle dynamics
+• Discrete Element Method (DEM) for particle dynamics
 
-Immersed Moving Boundary (IMB) for fluid–particle coupling
+• Immersed Moving Boundary (IMB) for fluid–particle coupling
 
-The framework was developed with a strong focus on numerical transparency, modularity, and research flexibility, enabling the study of complex multiphase systems involving granular materials and fluids.
+• The framework was developed with a strong focus on numerical transparency, modularity, and research flexibility, enabling the study of complex multiphase systems involving granular materials and fluids.
 
 Typical applications include:
 
