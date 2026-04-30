@@ -1,29 +1,40 @@
 cmake_minimum_required(VERSION 3.10)
 
-project(FSIT)
+project(FSIT2D)
 
-# Set the path for the Eigen library
-find_package (Eigen3 3.3 REQUIRED NO_MODULE)
+find_package(Eigen3 3.3 REQUIRED NO_MODULE)
 
-# Include the Eigen directory
-include_directories(${EIGEN3_DIR})
-
-set(ENTRY_FILE "scenarios/validation.cpp" CACHE STRING "scenarios/Entry point .cpp file")
-
-set(FSIT_SOURCES
-    ${ENTRY_FILE}
+set(COMMON_SOURCES
     lbm/cell.cpp
     dem/body.cpp
     dem/interaction.cpp
     engine/engine.cpp
     property/shape.cpp
     scene/scene.cpp
-    scene/output.cpp)
+    scene/output.cpp
+)
 
-# Define your executable and its source files
-add_executable(FSIT ${FSIT_SOURCES})
+file(GLOB SCENARIO_SOURCES
+    CONFIGURE_DEPENDS
+    scenarios/*.cpp
+)
 
-# Set the include directories for the FSIT target
-target_include_directories(FSIT PUBLIC ${PROJECT_SOURCE_DIR})
+foreach(SCENARIO_FILE ${SCENARIO_SOURCES})
 
-target_link_libraries (FSIT Eigen3::Eigen)
+    get_filename_component(SCENARIO_NAME ${SCENARIO_FILE} NAME_WE)
+
+    add_executable(${SCENARIO_NAME}
+        ${SCENARIO_FILE}
+        ${COMMON_SOURCES}
+    )
+
+    target_include_directories(${SCENARIO_NAME}
+        PUBLIC
+            ${PROJECT_SOURCE_DIR}
+    )
+
+    target_link_libraries(${SCENARIO_NAME}
+        Eigen3::Eigen
+    )
+
+endforeach()

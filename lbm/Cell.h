@@ -1,7 +1,7 @@
 #ifndef CELL_H
 #define CELL_H
 
-#include "lattice.h"
+#include "lbm/lattice.h"
 #include "property/state.h"
 #include "property/material.h"
 
