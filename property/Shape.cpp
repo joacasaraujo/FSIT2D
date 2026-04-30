@@ -1,4 +1,4 @@
-#include "Shape.h"
+#include "shape.h"
 
 void Shape::generate_particle(std::string _file_name){
     //Atribuição dos pontos das coordenadas

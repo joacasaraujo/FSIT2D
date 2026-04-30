@@ -1,7 +1,7 @@
 #ifndef OUTPUT_H
 #define OUTPUT_H
 
-#include "maths/Math.h"
+#include "maths/math.h"
 
 
 class Scene;

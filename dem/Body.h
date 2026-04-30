@@ -1,12 +1,12 @@
 #ifndef BODY_H
 #define BODY_H
 
-#include "maths/Math.h"
-#include "property/Material.h"
-#include "property/State.h"
-#include "property/Shape.h"
-#include "dem/Interaction.h"
-#include "lbm/Cell.h"
+#include "maths/math.h"
+#include "property/material.h"
+#include "property/state.h"
+#include "property/shape.h"
+#include "dem/interaction.h"
+#include "lbm/cell.h"
 
 class Interaction;
 

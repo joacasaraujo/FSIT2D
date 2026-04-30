@@ -1,7 +1,7 @@
 #ifndef STATE_H
 #define STATE_H
 
-#include "maths/Math.h"
+#include "maths/math.h"
 
 class State {
     public:

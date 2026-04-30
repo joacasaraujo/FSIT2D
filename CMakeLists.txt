@@ -12,13 +12,13 @@ set(ENTRY_FILE "scenarios/validation.cpp" CACHE STRING "scenarios/Entry point .c
 
 set(FSIT_SOURCES
     ${ENTRY_FILE}
-    lbm/Cell.cpp
-    dem/Body.cpp
-    dem/Interaction.cpp
-    engine/Engine.cpp
-    property/Shape.cpp
-    scene/Scene.cpp
-    scene/Output.cpp)
+    lbm/cell.cpp
+    dem/body.cpp
+    dem/interaction.cpp
+    engine/engine.cpp
+    property/shape.cpp
+    scene/scene.cpp
+    scene/output.cpp)
 
 # Define your executable and its source files
 add_executable(FSIT ${FSIT_SOURCES})

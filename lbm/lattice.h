@@ -1,7 +1,7 @@
 #ifndef LATTICE_H
 #define LATTICE_H
 
-#include "maths/Math.h"
+#include "maths/math.h"
 
 class Lattice {
     public:

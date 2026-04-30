@@ -1,7 +1,7 @@
 #ifndef ENGINE_H
 #define ENGINE_H
 
-#include "maths/Math.h"
+#include "maths/math.h"
 class Scene;
 
 class Engine {

@@ -1,5 +1,5 @@
-#include "Cell.h"
-#include "scene/Scene.h"
+#include "cell.h"
+#include "scene/scene.h"
 
 double Cell::CalculateEqFunction(double rho, Vector3r u, int k) {
     const Scene&  S  = Scene::get_Scene();

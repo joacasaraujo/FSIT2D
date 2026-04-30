@@ -2,11 +2,11 @@
 #define SCENE_H
 
 // #include "maths/Math.h"
-#include "lbm/Cell.h"
-#include "dem/Body.h"
-#include "dem/Interaction.h"
-#include "engine/Engine.h"
-#include "maths/Math.h"
+#include "lbm/cell.h"
+#include "dem/body.h"
+#include "dem/interaction.h"
+#include "engine/engine.h"
+#include "maths/math.h"
 
 class Body;
 class Interaction;

@@ -12,7 +12,7 @@
 #include <algorithm>
 #include <cmath>
 
-#include "EigenTypes.h"
-#include "BoostTypes.h"
-#include "Assert.h"
-#include "Timer.h"
+#include "eigen_types.h"
+#include "boost_types.h"
+#include "assert.h"
+#include "timer.h"

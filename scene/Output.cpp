@@ -1,9 +1,9 @@
 #include <fstream>
-#include "scene/Scene.h"
-#include "dem/Body.h"
-#include "property/State.h"
-#include "property/Shape.h"
-#include "scene/Output.h"
+#include "scene/scene.h"
+#include "dem/body.h"
+#include "property/state.h"
+#include "property/shape.h"
+#include "scene/output.h"
 
 void Output::DisplaySimulationInfo(){
 	Scene& S = Scene::get_Scene();

@@ -1,5 +1,4 @@
-#include "scene/Scene.h"
-
+#include "scene/scene.h"
 
 static Scene scene;
 

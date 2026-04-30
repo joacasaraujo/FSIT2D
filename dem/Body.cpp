@@ -1,4 +1,4 @@
-#include "Body.h"
+#include "body.h"
 
 bool Body::CheckInteraction(int _body_id) {
 	for (auto& I : inter) {

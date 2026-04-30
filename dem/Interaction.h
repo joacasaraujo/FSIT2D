@@ -2,9 +2,9 @@
 #define INTERACTION_H
 
 #define _USE_MATH_DEFINES
-#include "maths/Math.h"
-#include "dem/Body.h"
-#include "scene/Scene.h"
+#include "maths/math.h"
+#include "dem/body.h"
+#include "scene/scene.h"
 
 class Body;
 

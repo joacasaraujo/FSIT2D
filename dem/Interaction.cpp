@@ -1,4 +1,4 @@
-#include "Interaction.h"
+#include "interaction.h"
 
 bool Interaction::CheckContact() {
 	auto b1 = body1.lock();

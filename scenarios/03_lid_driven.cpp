@@ -1,5 +1,5 @@
-#include "scene/Scene.h"
-#include "scene/Output.h"
+#include "scene/scene.h"
+#include "scene/output.h"
 
 int main(){
     Timer T;
